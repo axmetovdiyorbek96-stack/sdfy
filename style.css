@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin:0 auto;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav ul li a:hover{
+     color: gray;
+     font-weight: 700;
+}
+.btn{
+    width: 180px;
+    height: 35px;
+    background-color: #FC004A;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.btn i{
+    padding-right: 10px;
+}
+.sec-1{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.sec-1 img{
+    border-radius: 20px;
+}
+.card{
+    box-shadow: 0px 4px 6px -4px #0000001A;
+    box-shadow: 0px 10px 15px -3px #0000001a;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 290px;
+    height: 390px;
+    padding: 30px 0;
+    padding-left: 20px;
+}
+.sec-2{
+    margin-top: 100px;
+}
+.card h3{
+    color: #FC004A;
+    padding-top: 10px;
+}
+.btn1{
+    background-color: #FC004A;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+.btn1 i{
+    font-size: 24px;
+}
+.ota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.head-foot{
+    padding: 50px 0;
+}
+.ota2{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 300px;
+}
+.btn2{
+    display: none;
+    background: none;
+    border: none;
+
+}
+
+
+@media(max-width:418px){
+    
+    nav ul{
+        display: none;
+    }
+        
+    
+    header img{
+        display: none;
+    }
+    
+    .sec-1{
+        margin-left: -30px;
+        
+    }
+    .sec-1 img{
+        border-radius: 20px;
+        width: 400px;
+        margin-left: 140px;
+    }
+    .btn{
+        margin-left: 110px;
+    }
+   
+    .btn2{
+        display: block;
+        margin-left: 120px;
+    }
+    
+    .ota2{
+        flex-direction: column-reverse;
+        margin-left: -200px;
+    }
+    .sec-2 h1{
+        padding-left: 30px;
+    }
+    .sec-2{
+        margin-left: 100px;
+    }
+}
